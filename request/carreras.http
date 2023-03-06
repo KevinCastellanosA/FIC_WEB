@@ -1,0 +1,487 @@
+@api = http://localhost:3020/api/v1/carreras
+#@api = http://187.229.22.99:8010/api/v1/carreras
+### GET
+GET {{api}}
+### GET ITEM
+GET {{api}}/1
+### GET ITEM
+GET {{api}}/1?keyType=OK
+### GET ITEM
+GET {{api}}/15058?keyType=BK
+
+//Education
+### POST ITEM carreras
+POST {{api}}
+Content-Type: application/json
+
+{
+  "IdCarreraPK": 2,
+  "IdCarreraOK": "2",
+  "IdCarreraBK": "ISIC-2010-225",
+  "DesCarrera": "Ingenieria en tecnologias de la información",
+  "NombreCorto": "Ing. TICS",
+  "Alias": "TICS",
+  "Creditos": 123,
+  "FechaInicial": "1990-01-02T02:45:34.446+0000",
+  "FechaFinal": "2023-12-01T00:00:00.000+0000",
+  "IdInstitutoOK": "1",
+  "IdInstitutoBK": "18DIT0002Z",
+  "IdDivisionOK": "1",
+  "IdDivisionBK": "TICS-220",
+  "IdTipoGradoAcademicoOK": "200",
+  "IdGradoAcademicoOK": "200-1",
+  "GradoAcademico": "LICENCIATURA",
+  "cat_carreras_estatus": [
+    {
+      "IdTipoEstatusOK": "302",
+      "IdEstatusOK": "302-1",
+      "Estatus": "ACTIVA",
+      "Actual": "S",
+      "Observacion": "",
+      "detail_row": {
+        "Activo": "S",
+        "Borrado": "N",
+        "detail_row_reg": [
+          {
+            "FechaReg": "2022-04-30T00:00:00.628+0000",
+            "UsuarioReg": "FIBARRAC"
+          }
+        ]
+      }
+    }
+  ],
+  "detail_row": {
+    "Activo": "S",
+    "Borrado": "N",
+    "detail_row_reg": [
+      {
+        "FechaReg": "2022-04-30T00:00:00.628+0000",
+        "UsuarioReg": "FIBARRAC"
+      }
+    ]
+  },
+  "cat_carreras_programas": [
+    {
+      "IdProgramaOK": "1",
+      "IdProgramaBK": "PROG-ISC-1",
+      "DesPrograma": "Programa de Estudio para Ingenieria en Sistemas Computacionales",
+      "FechaInicial": "2018-01-01T00:00:00.000+0000",
+      "FechaFinal": "2018-01-01T00:00:00.000+0000",
+      "cat_carreras_reticulas": [
+        {
+          "IdReticulaOK": "1",
+          "IdReticulaBK": "RETSYC-1",
+          "DesReticula": "Reticula Ingeniería en Sistemas Computacionales",
+          "FechaInicial": "1991-02-04T02:45:34.446+0000",
+          "FechaFinal": "2025-04-04T02:45:34.446+0000",
+          "cat_reticulas_estatus": [
+            {
+              "IdTipoEstatusOK": "310",
+              "IdEstatusOK": "310-1",
+              "Estatus": "ACTIVA",
+              "Actual": "S",
+              "Observacion": "",
+              "detail_row": {
+                "Activo": "S",
+                "Borrado": "N",
+                "detail_row_reg": [
+                  {
+                    "FechaReg": "2022-04-30T00:00:00.628+0000",
+                    "UsuarioReg": "FIBARRAC"
+                  }
+                ]
+              }
+            }
+          ],
+          "cat_reticulas_asignaturas": [
+            {
+              "IdAsignaturaOK": "1",
+              "IdAsignaturaBK": "SCC-1012",
+              "DesAsignatura": "Inteligencia Artificial",
+              "NombreCorto": "Int. Art.",
+              "Alias": "IA",
+              "Matricula": "173-ART",
+              "Creditos": 5,
+              "cat_asignaturas_estatus": [
+                {
+                  "IdTipoEstatusOK": "300",
+                  "IdEstatusOK": "300-1",
+                  "Estatus": "ACTIVA",
+                  "Actual": "S",
+                  "Observacion": "",
+                  "detail_row": {
+                    "Activo": "S",
+                    "Borrado": "N",
+                    "detail_row_reg": [
+                      {
+                        "FechaReg": "2022-04-30T00:00:00.628+0000",
+                        "UsuarioReg": "FIBARRAC"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "detail_row": {
+                "Activo": "S",
+                "Borrado": "N",
+                "detail_row_reg": [
+                  {
+                    "FechaReg": "2022-04-30T00:00:00.628+0000",
+                    "UsuarioReg": "FIBARRAC"
+                  }
+                ]
+              }
+            },
+            {
+              "IdAsignaturaOK": "2",
+              "IdAsignaturaBK": "ACA0910",
+              "DesAsignatura": "Taller de Investigación II",
+              "NombreCorto": "Tall. Inv. II",
+              "Alias": "TI2",
+              "Matricula": "",
+              "Creditos": 5,
+              "cat_asignaturas_estatus": [
+                {
+                  "IdTipoEstatusOK": "300",
+                  "IdEstatusOK": "300-1",
+                  "Estatus": "ACTIVA",
+                  "Actual": "S",
+                  "Observacion": "",
+                  "detail_row": {
+                    "Activo": "S",
+                    "Borrado": "N",
+                    "detail_row_reg": [
+                      {
+                        "FechaReg": "2022-04-30T00:00:00.628+0000",
+                        "UsuarioReg": "FIBARRAC"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "detail_row": {
+                "Activo": "S",
+                "Borrado": "N",
+                "detail_row_reg": [
+                  {
+                    "FechaReg": "2022-04-30T00:00:00.628+0000",
+                    "UsuarioReg": "FIBARRAC"
+                  }
+                ]
+              }
+            },
+            {
+              "IdAsignaturaOK": "3",
+              "IdAsignaturaBK": "DAB2003",
+              "DesAsignatura": "Infraestructura de Desarrollo Web",
+              "NombreCorto": "Infra. Desa. Web",
+              "Alias": "IDW",
+              "Matricula": "",
+              "Creditos": 5,
+              "cat_asignaturas_estatus": [
+                {
+                  "IdTipoEstatusOK": "300",
+                  "IdEstatusOK": "300-1",
+                  "Estatus": "ACTIVA",
+                  "Actual": "S",
+                  "Observacion": "",
+                  "detail_row": {
+                    "Activo": "S",
+                    "Borrado": "N",
+                    "detail_row_reg": [
+                      {
+                        "FechaReg": "2022-04-30T00:00:00.628+0000",
+                        "UsuarioReg": "FIBARRAC"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "detail_row": {
+                "Activo": "S",
+                "Borrado": "N",
+                "detail_row_reg": [
+                  {
+                    "FechaReg": "2022-04-30T00:00:00.628+0000",
+                    "UsuarioReg": "FIBARRAC"
+                  }
+                ]
+              }
+            },
+            {
+              "IdAsignaturaOK": "5",
+              "IdAsignaturaBK": "SCD1015",
+              "DesAsignatura": "Lenguajes y Autómatas I",
+              "NombreCorto": "Leng. y Aut. I",
+              "Alias": "LYA1",
+              "Matricula": "",
+              "Creditos": 5,
+              "cat_asignaturas_estatus": [
+                {
+                  "IdTipoEstatusOK": "300",
+                  "IdEstatusOK": "300-1",
+                  "Estatus": "ACTIVA",
+                  "Actual": "S",
+                  "Observacion": "",
+                  "detail_row": {
+                    "Activo": "S",
+                    "Borrado": "N",
+                    "detail_row_reg": [
+                      {
+                        "FechaReg": "2022-04-30T00:00:00.628+0000",
+                        "UsuarioReg": "FIBARRAC"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "detail_row": {
+                "Activo": "S",
+                "Borrado": "N",
+                "detail_row_reg": [
+                  {
+                    "FechaReg": "2022-04-30T00:00:00.628+0000",
+                    "UsuarioReg": "FIBARRAC"
+                  }
+                ]
+              }
+            },
+            {
+              "IdAsignaturaOK": "6",
+              "IdAsignaturaBK": "SCC1014",
+              "DesAsignatura": "Lenguajes de Interfaces",
+              "NombreCorto": "Leng. de Int.",
+              "Alias": "LI",
+              "Matricula": "",
+              "Creditos": 5,
+              "cat_asignaturas_estatus": [
+                {
+                  "IdTipoEstatusOK": "300",
+                  "IdEstatusOK": "300-1",
+                  "Estatus": "ACTIVA",
+                  "Actual": "S",
+                  "Observacion": "",
+                  "detail_row": {
+                    "Activo": "S",
+                    "Borrado": "N",
+                    "detail_row_reg": [
+                      {
+                        "FechaReg": "2022-04-30T00:00:00.628+0000",
+                        "UsuarioReg": "FIBARRAC"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "detail_row": {
+                "Activo": "S",
+                "Borrado": "N",
+                "detail_row_reg": [
+                  {
+                    "FechaReg": "2022-04-30T00:00:00.628+0000",
+                    "UsuarioReg": "FIBARRAC"
+                  }
+                ]
+              }
+            },
+            {
+              "IdAsignaturaOK": "7",
+              "IdAsignaturaBK": "AQIM-870",
+              "DesAsignatura": "Química I",
+              "NombreCorto": "Química I",
+              "Alias": "Q1",
+              "Matricula": "091-QM",
+              "Creditos": 5,
+              "cat_asignaturas_estatus": [
+                {
+                  "IdTipoEstatusOK": "300",
+                  "IdEstatusOK": "300-1",
+                  "Estatus": "ACTIVA",
+                  "Actual": "S",
+                  "Observacion": "",
+                  "detail_row": {
+                    "Activo": "S",
+                    "Borrado": "N",
+                    "detail_row_reg": [
+                      {
+                        "FechaReg": "2022-04-30T00:00:00.628+0000",
+                        "UsuarioReg": "FIBARRAC"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "detail_row": {
+                "Activo": "S",
+                "Borrado": "N",
+                "detail_row_reg": [
+                  {
+                    "FechaReg": "2022-04-30T00:00:00.628+0000",
+                    "UsuarioReg": "FIBARRAC"
+                  }
+                ]
+              }
+            }
+          ],
+          "cat_reticulas_especialidades": [
+            {
+              "IdEspecialidadOK": "1",
+              "IdEspecialidadBK": "LI-8902",
+              "DesEspecialidad": "Tecnologías de la Información",
+              "FechaInicial": "1991-02-04T02:45:34.446+0000",
+              "FechaFinal": "2025-04-04T02:45:34.446+0000",
+              "cat_especialidades_asignaturas": [
+                {
+                  "IdAsignaturaOK": "8",
+                  "IdAsignaturaBK": "DAD2004",
+                  "DesAsignatura": "Laboratorio de Aplicaciones para Dispositivos Móviles",
+                  "NombreCorto": "Lab. Ap. Disp. Mov.",
+                  "Alias": "LADM",
+                  "Matricula": "",
+                  "Creditos": 5,
+                  "cat_asignaturas_estatus": [
+                    {
+                      "IdTipoEstatusOK": "300",
+                      "IdEstatusOK": "300-1",
+                      "Estatus": "ACTIVA",
+                      "Actual": "S",
+                      "Observacion": "",
+                      "detail_row": {
+                        "Activo": "S",
+                        "Borrado": "N",
+                        "detail_row_reg": [
+                          {
+                            "FechaReg": "2022-04-30T00:00:00.628+0000",
+                            "UsuarioReg": "FIBARRAC"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "detail_row": {
+                    "Activo": "S",
+                    "Borrado": "N",
+                    "detail_row_reg": [
+                      {
+                        "FechaReg": "2022-04-30T00:00:00.628+0000",
+                        "UsuarioReg": "FIBARRAC"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "IdAsignaturaOK": "9",
+                  "IdAsignaturaBK": "DAB2002",
+                  "DesAsignatura": "Desarrollo de Aplicaciones Híbridas",
+                  "NombreCorto": "Desa. Ap. Hibr.",
+                  "Alias": "DAH",
+                  "Matricula": "",
+                  "Creditos": 5,
+                  "cat_asignaturas_estatus": [
+                    {
+                      "IdTipoEstatusOK": "300",
+                      "IdEstatusOK": "300-1",
+                      "Estatus": "ACTIVA",
+                      "Actual": "S",
+                      "Observacion": "",
+                      "detail_row": {
+                        "Activo": "S",
+                        "Borrado": "N",
+                        "detail_row_reg": [
+                          {
+                            "FechaReg": "2022-04-30T00:00:00.628+0000",
+                            "UsuarioReg": "FIBARRAC"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "detail_row": {
+                    "Activo": "S",
+                    "Borrado": "N",
+                    "detail_row_reg": [
+                      {
+                        "FechaReg": "2022-04-30T00:00:00.628+0000",
+                        "UsuarioReg": "FIBARRAC"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "detail_row": {
+                "Activo": "S",
+                "Borrado": "N",
+                "detail_row_reg": [
+                  {
+                    "FechaReg": "2022-04-30T00:00:00.628+0000",
+                    "UsuarioReg": "FIBARRAC"
+                  }
+                ]
+              }
+            }
+          ],
+          "detail_row": {
+            "Activo": "S",
+            "Borrado": "N",
+            "detail_row_reg": [
+              {
+                "FechaReg": "2022-04-30T00:00:00.628+0000",
+                "UsuarioReg": "FIBARRAC"
+              }
+            ]
+          }
+        }
+      ],
+      "cat_carreras_modalidades": [
+        {
+          "IdProgramaOK": "1",
+          "IdProgramaBK": "PROG-ISC-1",
+          "IdTipoModalidadOK": "206",
+          "IdModalidadOK": "206-1",
+          "Modalidad": "ESCOLARIZADO"
+        },
+        {
+          "IdProgramaOK": "1",
+          "IdProgramaBK": "PROG-ISC-1",
+          "IdTipoModalidadOK": "206",
+          "IdModalidadOK": "206-2",
+          "Modalidad": "SEMIESCOLARIZADO"
+        },
+        {
+          "IdProgramaOK": "1",
+          "IdProgramaBK": "PROG-ISC-1",
+          "IdTipoModalidadOK": "206",
+          "IdModalidadOK": "206-3",
+          "Modalidad": "EN LINEA"
+        }
+      ],
+      "detail_row": {
+        "Activo": "S",
+        "Borrado": "N",
+        "detail_row_reg": [
+          {
+            "FechaReg": "2022-04-30T00:00:00.628+0000",
+            "UsuarioReg": "FIBARRAC"
+          }
+        ]
+      }
+    }
+  ]
+}
+
+### PUT ITEM INSTITUTO
+PUT {{api}}/2
+Content-Type: application/json
+
+    {
+        "IdCarreraPK": 2,
+        "IdCarreraOK": "2",
+        "IdCarreraBK": "ISIC-2010-225",
+        "DesCarrera": "Ingenieria en tecnologias de la información",
+        "NombreCorto": "Ing. TICS",
+        "Alias": "TICS",
+        "Creditos": 123,
+        "FechaInicial": "1990-01-02T02:45:34.446+0000",
+        "FechaFinal": "2023-12-01T00:00:00.000+0000",
+        "IdInstitutoOK": "2"
+    }
